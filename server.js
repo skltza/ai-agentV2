@@ -36,7 +36,7 @@ app.post("/voice/inbound", (req, res) => {
   // voice in a later step).
   const response = new twiml.VoiceResponse();
   response.say(
-    { voice: "Polly.Nicole" }, // Polly.Nicole is an Australian English voice
+    { voice: "Polly.Olivia-Neural", language: "en-AU" }, // Olivia-Neural: natural-sounding Australian English
     "Hello! Thanks for calling. This is a test of the A.I. receptionist system. " +
     "If you can hear this clearly, step one is working. Goodbye for now."
   );
